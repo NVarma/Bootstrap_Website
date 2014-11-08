@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>3 Carousel Layout (BS 3)</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+	
+	<div class="navbar-wrapper">
+  <div class="container">
+    <nav class="navbar navbar-inverse default">
+      
+        <div class="navbar-header">
+	    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </a>
+        <a class="navbar-brand" href="#">UX Booth</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">IoT/IoE Products</a></li>
+                <li><a href="#">Big Data Products</a></li>
+                <li><a href="#">Mobile Products</a></li>
+              </ul>
+            </li>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Code of Conduct</a></li>
+                <li><a href="#">Business Process</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contacts</a></li>
+              </ul>
+            </li>
+          </ul>
+       </div>
+
+    </div>
+  </div><!-- /container -->
+</nav><!-- /navbar wrapper -->
+<div class="row">	
+<div style="margin-top:100px" class="col-md-6 col-md-offset-3">
+<div class="well">
+<div class="col-md-12 col-md-offset-3">
+	<font face="helvetica" size="6" color="green">Internet Of Things</font>
+	</div>
+	
+	<font face="helvetica" size="4">
+	Gartner define Internet of Things "is the network of physical objects that contain embedded technology to communicate and sense or interact with their internal states or the external environment."<br>As per International Corporation(IDC) press release "The Internet of Things is poised to Change everything", The Internet of Things(IoT) represents a new construct in the information and communications technology(ICT) world that is occupying the minds of IT vendors, service providers, and system integratos as it represents huge potential for new streams of revenue and new customers.</font></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-md-offset-1">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+  &nbsp;&nbsp;Brochure&nbsp;&nbsp;
+</button>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12"><br><br>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-md-offset-1">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  White Paper
+</button>
+</div>
+<div style="background-color:green;color:white" class="col-md-2 col-md-offset-4">
+Number of Sensors: 30<br>Data Streams: 30kb/sec <br>Price: $30/month
+</div>
+<div style="background-color:green;color:white" class="col-md-2 col-md-offset-1">
+Number of Sensors: 60<br>Data Streams: 50kb/sec <br>Price: $50/month
+</div>
+</div>
+<!-- Modal 1-->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Brochure</h4>
+      </div>
+      <div class="modal-body">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Download White paper</h4>
+      </div>
+      <div class="modal-body">
+       <form role="form">
+  <div class="form-group">
+    <label for="first name">Enter First Name</label>
+    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+  </div>
+  <div class="form-group">
+    <label for="last name">Enter Last Name</label>
+    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+  </div>
+   <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter EmailId">
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">&nbsp;Cancel&nbsp;</button>
+        <button type="button" class="btn btn-primary">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- script references -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		</div>
+	</body>
+</html>
