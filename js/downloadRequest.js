@@ -1,16 +1,14 @@
 var userDetails;
 var httpRequest;
 function downloadFile(){
+    // // hope the server sets Content-Disposition: attachment!
+    window.location = 'bigdatawhitepaper.pdf';
 	console.log("in store data func");
 	 userDetails = {
         firstname : document.getElementById("firstname").value,
         lastname : document.getElementById("lastname").value,
     };
     console.log("in store data func end ");
-  /*  $("#btn1").click(function() {
-    // // hope the server sets Content-Disposition: attachment!
-    window.location = 'bigdatawhitepaper.pdf';
-});*/
     handleButtonRequest();
     console.log("in store data func checkng vl"+JSON.stringify(userDetails));
 }

@@ -150,22 +150,17 @@ Number of Sensors: 60<br>Data Streams: 50kb/sec <br>Price: $50/month
        <form role="form" method = "post" action = "http://localhost:8888/server.js">
   <div class="form-group">
     <label for="first name">Enter First Name</label>
-    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+    <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
   </div>
   <div class="form-group">
     <label for="last name">Enter Last Name</label>
-    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
-  </div>
-   <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter EmailId">
+    <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
   </div>
 </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">&nbsp;Cancel&nbsp;</button>
         <button type="button" class="btn btn-primary" onclick = "downloadFile()">Submit</button>
-		<a href = "bigdatawhitepaper.pdf" download = "download/bigdata.pdf">Download</a>
       </div>
     </div>
   </div>
@@ -190,6 +185,7 @@ Number of Sensors: 60<br>Data Streams: 50kb/sec <br>Price: $50/month
 	<!-- script references -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+        <script src="js/downloadRequest.js"></script>
 		</div>
 	</body>
 </html>
